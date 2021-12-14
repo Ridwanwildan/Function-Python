@@ -12,11 +12,41 @@ Dalam latihan membuat function [`python`](https://www.python.org/) ini, saya men
 
 ## Latihan      
 
-Latihan mengubah function biasa menjadi `lambda function`. Ini merupaka function sebelum diubah ke lambda function :            
+Latihan mengubah function biasa menjadi `lambda function`. Ini merupaka function sebelum diubah ke lambda function :          
 ```bash
 import math
+
+def a(x):
+    return x**2
+
+def b(x, y):
+    return math.sqrt(x**2 + y**2)
+
+def c (*args):
+    return sum(args)/len(args)
+
+def d(s):
+    return "".join(set(s))
+```              
+Ini yang sudah diubahnya :             
+```bash
+import math
+
 a = lambda x: x**2
+
 b = lambda x, y: math.sqrt(x**2 + y**2)
+
 c = lambda *args: sum(args)/len(args)
+
 d = lambda s: "".join(set(s))
 ```         
+
+## Tugas           
+
+Buat program sederhana dengan mengaplikasikan penggunaan fungsi yang akan menampilkan daftar nilai mahasiswa, dengan ketentuan:             
+* Fungsi `tambah()` untuk menambah data                
+* Fungsi `tampilkan()` untuk menampilkan data                
+* Fungsi `hapus(nama)` untuk menghapus data berdasarkan nama                
+* Fungsi `ubah(nama)` untuk mengubah data berdasarkan nama                
+
+![Gambar 1](screenshot/flowchart.png)         
