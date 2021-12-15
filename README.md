@@ -73,7 +73,7 @@ def tambah():
 ```         
 ![Gambar 2](screenshot/img1.PNG)          
 
-Selanjutnya buat fungsi `tampilkan()`. Selanjutnya ada menu lihat data. Untuk mengakses menu ini user bisa ketik `L` atau `l` dan nanti akan ada tampilan tabel yang berisi data data yang sudah ditambahkan tadi. Kita gunakan ***if len(data["nama"]) != 0*** yang artinya jika ada data maka tabel akan menampilkan keseluruhan data sebanyak n kali sesuai dengan ***len(data["nama"])*** dan jika tidak ada data sama sekali maka tabel akan menampilkan tulisan ***TIDAK ADA DATA***.          
+Selanjutnya buat fungsi `tampilkan()`. Untuk mengakses menu ini user bisa ketik `L` atau `l` dan nanti akan ada tampilan tabel yang berisi data data yang sudah ditambahkan tadi. Kita gunakan `if len(data["nama"]) != 0` yang artinya jika ada data maka tabel akan menampilkan keseluruhan data sebanyak n kali sesuai dengan `len(data["nama"])` dan jika tidak ada data sama sekali maka tabel akan menampilkan tulisan ***TIDAK ADA DATA***.          
 ```bash
 def tampilkan():
      print("Daftar Nilai")
@@ -136,7 +136,7 @@ def ubah():
 ```         
 ![Gambar 6](screenshot/img5.PNG)          
 
-Kemudian fungsi yang sudah dibuat atau dideklarasikan tadi, kita akan masukkan ke dalam while loop dan bisa dipanggil kapan saja.                
+Kemudian fungsi yang sudah dibuat atau dideklarasikan tadi, kita akan masukkan ke dalam `while loop` dan bisa dipanggil kapan saja.                
 ```bash
 while True:
      menu = input("\n[(L)ihat, (T)ambah, (U)bah, (H)apus, (K)eluar]:")
