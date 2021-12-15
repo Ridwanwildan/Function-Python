@@ -49,7 +49,7 @@ Buat program sederhana dengan mengaplikasikan penggunaan fungsi yang akan menamp
 * Fungsi `hapus(nama)` untuk menghapus data berdasarkan nama                
 * Fungsi `ubah(nama)` untuk mengubah data berdasarkan nama                
 
-![Gambar 1](screenshot/flowchart.PNG)         
+![Gambar 1](screenshot/flowchart.png)         
 
 Untuk menyimpan datanya kita akan menggunakan dictionary. Deklarasikan dictionary terlebih dulu :           
 ```bash
@@ -71,7 +71,7 @@ def tambah():
      data["uas"].append(int(input("Nilai UAS   :")))
      data["tugas"].append(int(input("Nilai Tugas :")))
 ```         
-![Gambar 2](screenshot/img1.png)          
+![Gambar 2](screenshot/img1.PNG)          
 
 Selanjutnya buat fungsi `tampilkan()`. Selanjutnya ada menu lihat data. Untuk mengakses menu ini user bisa ketik `L` atau `l` dan nanti akan ada tampilan tabel yang berisi data data yang sudah ditambahkan tadi. Kita gunakan ***if len(data["nama"]) != 0*** yang artinya jika ada data maka tabel akan menampilkan keseluruhan data sebanyak n kali sesuai dengan ***len(data["nama"])*** dan jika tidak ada data sama sekali maka tabel akan menampilkan tulisan ***TIDAK ADA DATA***.          
 ```bash
@@ -93,8 +93,8 @@ def tampilkan():
          print("                         TIDAK ADA DATA                               ")      
      print("==========================================================================")
 ```         
-![Gambar 3](screenshot/img2.png)          
-![Gambar 4](screenshot/img3.png)          
+![Gambar 3](screenshot/img2.PNG)          
+![Gambar 4](screenshot/img3.PNG)          
 
 Fungsi menghapus data `hapus(nama)`. Untuk masuk ke menu ini ketik `H` atau `h`. User akan diminta untuk menginput nama yang akan dihapus datanya. Kemudian dicari nama tersebut ada di index ke berapa dengan `index()` dan nantinya index tersebut akan dihapus datanya.                 
 ```bash
@@ -111,7 +111,7 @@ def hapus():
     else:
         print("Nama", hapus, "tidak ada")
 ```         
-![Gambar 4](screenshot/img4.png)          
+![Gambar 5](screenshot/img4.PNG)          
 
 Fungsi mengubah data `ubah(nama)`. Untuk masuk ke menu ini ketik `U` atau `u`. User akan diminta untuk menginput nama yang akan diubah datanya. Kemudian dicari nama tersebut ada di index ke berapa dengan `index()` dan nantinya index tersebut akan diubah datanya.                 
 ```bash
@@ -134,7 +134,7 @@ def ubah():
     else:
         print("Nama", ubah, "tidak ada")
 ```         
-![Gambar 4](screenshot/img5.png)          
+![Gambar 6](screenshot/img5.PNG)          
 
 Kemudian fungsi yang sudah dibuat atau dideklarasikan tadi, kita akan masukkan ke dalam while loop dan bisa dipanggil kapan saja.                
 ```bash
